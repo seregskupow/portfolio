@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Farro|M+PLUS+Rounded+1c|Roboto&display=swap");
+@import "variables";
+
+body {
+  color: $mainWhite;
+  background: transparent !important;
+  font-family: "Roboto", sans-serif;
+}
+
+///////////////////NAVBAR///////////////////////////////////
+nav {
+  width: 100%;
+ 
+  border-bottom: 4px solid rgba(255, 255, 255, 0.1);
+  background: $darkWhite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  & .nav-center {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    background: transparent;
+    font-size: 3rem;
+
+    & .icon {
+      cursor: pointer;
+      transition: $transition;
+      
+      & a{
+        text-decoration:"none";
+        color:$mainWhite;
+        transition: $transition;
+      }
+      &:hover, & a:hover{
+        text-shadow: 0px 0px 20px $primary, 0px 0px 9px $primary;
+        color: $primary;
+      }
+
+      &:nth-child(1):hover{
+        animation: spin 20s linear;
+      }
+    }
+  }
+}
+////////////////////////////////////////////HOME/////////////////
+.home {
+  min-height: 80vh;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  & .react {
+transition: $transition;
+animation: float 6s ease-in-out infinite;
+animation: spin 20s linear infinite;
+}
+  & .text {
+    & h1 {
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 0.8rem;
+      font-size: 5rem;
+    }
+
+    & p {
+      letter-spacing: 0.1rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+/////////////////////////////404////////////////////////////
+.notfound-content {
+  min-height: 80vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+    & .travolta{
+        animation: float 6s ease-in-out infinite;
+    }
+  & h1 {
+    font-size: 15em;
+    text-shadow: 0px 0px 11px $primary, 0px 0px 9px $primary;
+    color: $primary;
+  }
+  & p:nth-of-type(1) {
+    font-size: 2em;
+    text-shadow: 0px 0px 11px $primary, 0px 0px 9px $primary;
+    color: $primary;
+  }
+  & p:nth-of-type(2) {
+    color: #5e86f4;
+    font-size: 1.25em;
+  }
+}
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-50px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+@keyframes spin {
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    };
+}
+/////////////////////////////Navigation/////////////////////
+.navigation{
+    z-index:2;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 7vh;
+    left:0;
+
+    & ul{
+        list-style:none;
+        text-transform:uppercase;
+        text-decoration: none;
+
+        & a{
+            font-size:4em;
+            text-decoration: none !important;
+            color:$mainWhite;
+            
+            
+        }
+    }
+}
