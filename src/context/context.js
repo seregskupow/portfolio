@@ -24,7 +24,7 @@ setWorks = works =>{
     return all;
 
   });
-console.log(projects);
+  
   this.setState({
     works:projects
   })
