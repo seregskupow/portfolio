@@ -15,7 +15,11 @@ class ProductProvider extends Component {
 
   componentDidMount(){
     this.setWorks(projects);
+
+     
+
   }
+  
 setWorks = works =>{
   let projects = works.map(item=>{
     const id = item.sys.id;

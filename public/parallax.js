@@ -24,9 +24,12 @@
 
 
   document.body.addEventListener('mousemove',(e)=>{
-    parallaxIt(e, ".parallax", -50);
+    if(window.innerWidth>992)
+      parallaxIt(e, ".parallax", -50);
     // parallaxIt(e, ".travolta", -90);
   });
+
+  
 
   parallaxIt = (e,target,movement)=>{
     var this_ = document.body;
