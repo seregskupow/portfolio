@@ -55,7 +55,7 @@ export default function Home() {
                 <div className="col-10 col-sm-8 col-md-6 col-lg-6 mx-auto d-flex justify-content-center align-items-center mt-5">
                   <img
                     src={Img}
-                    style={{ maxHeight: "420px",maxWidth:"420px" }}
+                    style={{ maxHeight: "320px",maxWidth:"320px" }}
                     className="img-fluid rounded react"
                     alt=""
                   />
