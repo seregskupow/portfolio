@@ -52,10 +52,10 @@ export default function Home() {
                   </AwesomeButtonProgress>
                   </div>
                 </div>
-                <div className="col-10 col-sm-8 col-md-6 col-lg-6 mx-auto d-flex justify-content-center">
+                <div className="col-10 col-sm-8 col-md-6 col-lg-6 mx-auto d-flex justify-content-center align-items-center mt-5">
                   <img
                     src={Img}
-                    style={{ height: "520px" }}
+                    style={{ maxHeight: "420px",maxWidth:"420px" }}
                     className="img-fluid rounded react"
                     alt=""
                   />

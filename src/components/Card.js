@@ -30,13 +30,7 @@ export default function Card(props) {
     }
 
   }
-  const hoverHandle = (param) => {
-
   
-      
-
-    
-  }
   useEffect(() => {
     
     console.log(target)
