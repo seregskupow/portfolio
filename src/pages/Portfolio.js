@@ -28,7 +28,7 @@ export default function Portfolio() {
                             <div className="row">
 
                                 {works.map(item => (
-                                    <div key={item.id} className="item col-10 col-md-6 col-lg-6 mx-auto px-5 my-5" >
+                                    <div key={item.id} className="item col-12 col-md-6 col-lg-6 mx-auto px-5 my-5" >
                                         <Card  data={item} title={item.title} />
                                     </div>
                                 ))}
