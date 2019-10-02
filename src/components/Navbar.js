@@ -24,11 +24,19 @@ export default function Navbar() {
         return (
           <nav className="navig pb-3" >
             <NavBar height={navOpen} className="nav-center mx-auto">
-              <div className="icon">
-                <Link to={"/"} onClick={closeNav}><DiAtom /></Link>
+              <div className="icon d-flex justify-content-center align-items-center">
+                <Link to={"/"} onClick={closeNav}><DiAtom className="hover atom-hover" />
+
+                </Link>
+                <div className="btn-group d-flex ml-3">
+                  <div className="language px-2  p-2"><p>eng</p></div>
+                  <div className="language px-2  p-2"><p>ru</p></div>
+                  <div className="language px-2  p-2"><p>ukr</p></div>
+                </div>
               </div>
+
               <div className="icon">
-                <FaBars onClick={handleNav} />
+                <FaBars onClick={handleNav} className="hover" />
               </div>
             </NavBar>
             <Navigation prop={navOpen} />

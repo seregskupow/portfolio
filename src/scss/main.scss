@@ -15,8 +15,8 @@ section {
 }
 ///////////////////NAVBAR///////////////////////////////////
 nav {
-  width:100vw;
-  transition:$transition;
+  width: 100vw;
+  transition: $transition;
   border-bottom: 4px solid rgba(255, 255, 255, 0.1);
   background: $darkWhite;
   position: fixed;
@@ -26,37 +26,62 @@ nav {
   & .nav-center {
     display: flex;
     justify-content: space-between;
-    max-width:90%;
+    max-width: 90%;
     background: transparent;
     font-size: 3rem;
 
     & .icon {
       cursor: pointer;
-      transition: $transition;
 
+      & .btn-group {
+        background:$dark;
+        border-radius:20px;
+        align-items: center;
+        overflow: hidden;
+        & .language {
+          font-size: 0.6em;
+          transition: $transition;
+          &:hover{
+            color:$primary;
+            background: $darkWhite;
+          }
+
+          &:nth-child(2){
+            border-right:2px solid $darkWhite;
+            border-left:2px solid $darkWhite;
+          }
+          & p{
+            line-height: 1;
+            margin:0;
+          }
+        }
+      }
+      & .hover {
+        transition: $transition;
+      }
+      & .atom-hover:hover {
+        animation: spin 20s linear;
+      }
       & a {
-        text-decoration: "none";
+        text-decoration: none;
         color: $mainWhite;
         transition: $transition;
       }
-      &:hover,
-      & a:hover {
-        text-shadow: 0px 0px 20px $primary, 0px 0px 9px $primary;
+
+      & .hover:hover {
         color: $primary;
       }
 
       &:nth-child(1):hover {
-        animation: spin 20s linear;
       }
     }
   }
 }
 ////////////////////////////////////////////HOME/////////////////
-.drag{
-  transition: all .3s ease-out;
+.drag {
+  transition: all 0.3s ease-out;
 }
 .home {
-
   & .react {
     transition: $transition;
     animation: float 6s ease-in-out infinite;
@@ -148,52 +173,50 @@ nav {
   & .card {
     background: $darkWhite !important;
     border-radius: 20px;
-    overflow: hidden; 
-    padding:10px;
-    height:75%;
+    overflow: hidden;
+    padding: 10px;
+    height: 75%;
     transition: $transition;
 
-    &:hover{
+    &:hover {
       height: 100%;
     }
-    & .tools{
+    & .tools {
       flex-flow: row wrap;
-      & .tool{
-        background:$light;
-        border-radius:10px;
-        padding:5px 10px;
-        margin:10px;
-        opacity:0;
-        transform:translateY(-20px);
+      & .tool {
+        background: $light;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin: 10px;
+        opacity: 0;
+        transform: translateY(-20px);
       }
     }
-   
+
     & img {
       object-fit: cover;
     }
   }
 }
-/////////////////////////about///////////////////// 
-.about{
-margin-top:10vh;
-  & .about-row{
-    background:$darkWhite;
-    border-radius:20px;
+/////////////////////////about/////////////////////
+.about {
+  margin-top: 10vh;
+  & .about-row {
+    background: $darkWhite;
+    border-radius: 20px;
 
-    & .col{
-      
+    & .col {
     }
 
-    & p{
-      background:$dark;
-      border-radius:20px;
-      padding:30px;
+    & p {
+      background: $dark;
+      border-radius: 20px;
+      padding: 30px;
     }
 
-    &:hover{
-      
+    &:hover {
       box-shadow: 0px 0px 9px 2px $primary;
-      transition:$transition;
+      transition: $transition;
     }
   }
 }

@@ -16,16 +16,16 @@ export default function Card(props) {
   
   const cardAnimation = (el, param) => {
     let tl = new TimelineMax({ paused: true });
-
+    let arr = [...el.lastChild.lastChild.firstChild.children];
     if (param===true) {
-      let arr = [...el.lastChild.lastChild.firstChild.children];
-      tl.to(el, 0, { scale: 1.1, ease: Elastic.easeInOut }).staggerTo(arr, 1, { y: 0, opacity: 1,ease: Elastic.easeOut }, 0.1);
+      
+      tl.to(el, 0, { scale: 1.1, ease: Power3.easeOut }).staggerTo(arr, 1, { y: 0, opacity: 1,ease: Elastic.easeOut }, 0.1);
        tl.play();
     }
 
     else {
-      let arr = [...el.lastChild.lastChild.firstChild.children];
-      tl.to(el, 0, { scale: 1, ease: Elastic.easeInOut }).staggerTo(arr, .5, { y: -20, opacity: 0,ease: Elastic.easeIn }, 0.1);
+      
+      tl.to(el, 0, { scale: 1, ease: Power3.easeOut }).staggerTo(arr, .5, { y: -20, opacity: 0,ease: Elastic.easeIn }, 0.1);
       tl.play();
     }
 
