@@ -51,7 +51,7 @@ export default function Card(props) {
       <div className="card-body">
         <p className="text-uppercase haha" >{title}</p>
         <div className="text-center pt-3 " style={{ width: "100%" }}>
-          <div className="d-flex">{tools.map(tool => (
+          <div className="d-flex tools">{tools.map(tool => (
             <div className="tool">{tool}</div>
           ))}</div>
           <AwesomeButton size="medium" className="more-btn"> more</AwesomeButton>
