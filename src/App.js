@@ -25,7 +25,7 @@ function App() {
                 <Route path="/about" exact component={About} />
                 <Route path="/portfolio" exact component={Portfolio} />
 
-                <Route component={NotFound} />
+                <Route path="" component={NotFound} />
               </Switch>
             </Main>
           </>
