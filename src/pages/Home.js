@@ -38,7 +38,7 @@ export default function Home() {
                       <p className="text-uppercase">i am the beginner web developer, who searches for a job offer!</p>
 
                   </div>
-                  <div className="text-center" style={{ width: "100%" }}>
+                  <div className="" style={{ width: "100%" }}>
                     <AwesomeButtonProgress
                       class="drag"
                       ripple
@@ -70,7 +70,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="row mt-5">
-                <div className="col-12 contact-me">
+                <div className="contact-me">
                   <h3>Contact me</h3>
                   <ul>
                     <li><a href="https://t.me/sergeyskupow"><FaTelegramPlane/></a></li>

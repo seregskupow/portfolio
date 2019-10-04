@@ -101,32 +101,32 @@ nav {
     }
   }
   & .contact-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   width: 100%;
 
     & h3 {
       color: rgba(255, 255, 255, 0.5);
       letter-spacing: 5px;
+      text-align: center;
     }
     & ul {
       list-style: none;
       display: flex;
-      width: 40%;
-      justify-content: space-around;
+      justify-content: center;
+      align-items: center;
+      padding:0;
+      & li {
       & a {
         text-decoration: none;
-        font-size: 2em;
+        font-size: calc(30px + (10 * ((100vw - 320px) / 1380)));
         transition: $transition;
         color:$mainWhite;
-        & li {
-          cursor: pointer;
-        
-        }
-        &:hover {
+        padding:0px;
+        padding:0 20px;      
+       &:hover {
           color: $primary;
          
         }
+      }
       }
     }
   }
