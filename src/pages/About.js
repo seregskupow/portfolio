@@ -98,7 +98,7 @@ export default function About() {
               <div className="row about-row py-5 my-5 d-flex justify-content-center">
                 <div className="col-10 col-md-6 col-lg-6 d-flex justify-content-center flex-column">
                   <h1>My passions</h1>
-                  <p>If we are talking about the development, I would say the greatest pleasure I can receive is the filling of the finished project. I also love spending my time admiring and code reviewing the gsap professionals` projects at <a href="https://greensock.com/showcase/">here</a>.</p></div>
+                  <p>If we are talking about the development, I would say the greatest pleasure I can receive is the filling of the finished project. I also love spending my time admiring and code reviewing the gsap professionals` projects at <a href="https://greensock.com/showcase/">here</a>.<br/></p></div>
                 <div className="col-10 col-md-6 col-lg-6 d-flex justify-content-center">
                   <img src={love} alt="" className="img-fluid rounded" style={{ maxHeight: "350p" }} />
                 </div>
