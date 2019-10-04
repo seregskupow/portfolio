@@ -4,8 +4,8 @@ import { DataConsumer } from "../context";
 import styled from "styled-components";
 import {TweenMax} from 'gsap';
 import {Draggable} from 'gsap/all';
-
-
+import {FaTelegramPlane,FaDiscord,FaGithub} from "react-icons/fa";
+import {IoMdMail} from "react-icons/io";
 
 import {
   AwesomeButton,
@@ -34,15 +34,9 @@ export default function Home() {
                 <div className="col-10 col-sm-8 col-md-6 col-lg-6 my-auto">
                   <div className="text">
                     <h1 className="text-uppercase">hello!</h1>
-                    <p className="mt-5 animatedtext">
-                      My name is Sergey Skupow. I am beginer enthusiastic react
-                      developer, who wants to start a carrer in the succesfull
-                      company and develop my skills! make it right for Marsellus
-                      to throw Antwone into a glass motherfuckin' house, fuckin'
-                      up the way the nigger talks. Motherfucker do that shit to
-                      me, he better paralyze my ass, 'cause I'll kill the
-                      motherfucker, know what I'm sayin'?
-                    </p>
+                      <p class="text-uppercase">my name is Sergey Skupow</p>
+                      <p className="text-uppercase">i am the beginner web developer, who searches for a job offer!</p>
+
                   </div>
                   <div className="text-center" style={{ width: "100%" }}>
                     <AwesomeButtonProgress
@@ -73,6 +67,17 @@ export default function Home() {
                   />
                   </div>
                  
+                </div>
+              </div>
+              <div className="row mt-5">
+                <div className="col-12 contact-me">
+                  <h3>Contact me</h3>
+                  <ul>
+                    <li><a href="https://t.me/sergeyskupow"><FaTelegramPlane/></a></li>
+                    <li><a href=""><FaDiscord/></a></li>
+                    <li><a href="https://github.com/seregskupow"><FaGithub/></a></li>
+                    <li><a href=""><IoMdMail/></a></li>
+                  </ul>
                 </div>
               </div>
             </div>

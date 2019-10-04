@@ -1,7 +1,6 @@
 
 
 
-
 document.body.addEventListener('mousemove', (e) => {
   if (window.innerWidth > 992)
     parallaxIt(e, ".parallax", -50);

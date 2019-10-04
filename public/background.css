@@ -3,8 +3,10 @@ html {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   /* overflow: hidden; */
   background-attachment: fixed;
+  transition: all 1s ease;
+  -webkit-animation:back 50s;
+  
 }
-
 #stars {
   position: fixed;
   top:0;

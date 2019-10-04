@@ -28,11 +28,11 @@ export default function Navbar() {
                 <Link to={"/"} onClick={closeNav}><DiAtom className="hover atom-hover" />
 
                 </Link>
-                <div className="btn-group d-flex ml-3">
+                {/* <div className="btn-group d-flex ml-3">
                   <div className="language px-2  p-2"><p>eng</p></div>
                   <div className="language px-2  p-2"><p>ru</p></div>
                   <div className="language px-2  p-2"><p>ukr</p></div>
-                </div>
+                </div> */}
               </div>
 
               <div className="icon">
