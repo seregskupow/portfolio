@@ -101,7 +101,7 @@ nav {
     }
   }
   & .contact-me {
-   width: 100%;
+    width: 100%;
 
     & h3 {
       color: rgba(255, 255, 255, 0.5);
@@ -113,44 +113,59 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding:0;
+      padding: 0;
       & li {
-      & a {
-        text-decoration: none;
-        font-size: calc(30px + (10 * ((100vw - 320px) / 1380)));
-        transition: $transition;
-        color:$mainWhite;
-        padding:0px;
-        padding:0 20px;      
-       &:hover {
-          color: $primary;
-         
+        & a {
+          text-decoration: none;
+          font-size: calc(30px + (10 * ((100vw - 320px) / 1380)));
+          transition: $transition;
+          color: $mainWhite;
+          padding: 0px;
+          padding: 0 20px;
+          &:hover {
+            color: $primary;
+          }
         }
-      }
       }
     }
   }
 }
 /////////////////////////////404////////////////////////////
-.notfound-content {
-  text-align: center;
+.error {
+  height: 100vh;
+  & .notfound-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
 
-  & .travolta {
-    animation: float 6s ease-in-out infinite;
+    & .travolta {
+      animation: float 6s ease-in-out infinite;
+    }
+    & h1 {
+      font-size: 15em;
+      text-shadow: 0px 0px 11px $primary, 0px 0px 9px $primary;
+      color: $primary;
+    }
+    & p:nth-of-type(1) {
+      font-size: 2em;
+      text-shadow: 0px 0px 11px $primary, 0px 0px 9px $primary;
+      color: $primary;
+    }
+    & p:nth-of-type(2) {
+      color: #5e86f4;
+      font-size: 1.25em;
+    }
   }
-  & h1 {
-    font-size: 15em;
-    text-shadow: 0px 0px 11px $primary, 0px 0px 9px $primary;
-    color: $primary;
-  }
-  & p:nth-of-type(1) {
-    font-size: 2em;
-    text-shadow: 0px 0px 11px $primary, 0px 0px 9px $primary;
-    color: $primary;
-  }
-  & p:nth-of-type(2) {
-    color: #5e86f4;
-    font-size: 1.25em;
+}
+@media screen and (max-width:430px) {
+  .error{
+    & .notfound-content{
+
+      & h1{
+        font-size:10em;
+      }
+    }
   }
 }
 @keyframes float {
@@ -211,7 +226,6 @@ nav {
     &:hover {
       height: 100%;
     }
-     
 
     & img {
       object-fit: cover;
@@ -249,7 +263,6 @@ nav {
     &:hover {
       box-shadow: 0px 0px 9px 2px $primary;
       transition: $transition;
-      
     }
   }
 }
