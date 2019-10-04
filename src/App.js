@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
-import NotFound from "./pages/404";
+import NotFound from "./pages/_error";
 import Navbar from "./components/Navbar";
 import Navigation from "./components/Navigation";
 import "bootstrap/dist/css/bootstrap.min.css";
