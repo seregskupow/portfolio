@@ -3,6 +3,7 @@ import { DataConsumer } from "../context";
 import defaultimg from '../img/default.png'
 import aboutme from '../img/iam.gif';
 import smart from '../img/smart.gif';
+import love from '../img/love.gif';
 import { TweenMax, TimelineMax, Power3, Elastic } from 'gsap'
 import { DiHtml5, DiJavascript1, DiReact, DiNodejsSmall, DiPhp, DiSass, DiGit, DiBootstrap } from "react-icons/di";
 
@@ -96,10 +97,10 @@ export default function About() {
 
               <div className="row about-row py-5 my-5 d-flex justify-content-center">
                 <div className="col-10 col-md-6 col-lg-6 d-flex justify-content-center flex-column">
-                  <h1>Some text</h1>
-                  <p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man.</p></div>
+                  <h1>My passions</h1>
+                  <p>If we are talking about the development, I would say the greatest pleasure I can receive is the filling of the finished project. I also love spending my time admiring and code reviewing the gsap professionals` projects at <a href="https://greensock.com/showcase/">here</a>.</p></div>
                 <div className="col-10 col-md-6 col-lg-6 d-flex justify-content-center">
-                  <img src={defaultimg} alt="" className="img-fluid rounded" style={{ height: "250px" }} />
+                  <img src={love} alt="" className="img-fluid rounded" style={{ maxHeight: "350p" }} />
                 </div>
               </div>
             </div>
