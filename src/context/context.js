@@ -19,7 +19,19 @@ class ProductProvider extends Component {
      
 
   }
-  
+  handleSubmit() {
+    fetch(`download`)
+    .then(response => {response.blob().then(blob=>{
+      let url = window.URL.createObjectURL(blob);
+      let a = document.createElement('a');
+      a.href=url;
+      a.download = 'звіт.docx';
+      a.click();
+    })});
+    
+       
+  }
+
 setWorks = works =>{
   let projects = works.map(item=>{
     const id = item.sys.id;
@@ -50,7 +62,8 @@ setWorks = works =>{
         value={{
           ...this.state,
           handleNav:this.handleNav,
-          closeNav:this.closeNav
+          closeNav:this.closeNav,
+          handleSubmit:this.handleSubmit
         }}
       >
         {this.props.children}

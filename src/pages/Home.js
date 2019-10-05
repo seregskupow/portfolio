@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <DataConsumer>
       {value => {
-        const { navOpen, handleNav } = value;
+        const { navOpen, handleNav,handleSubmit } = value;
 
         return (
           <HomePage show={navOpen} className="home mt-5">
@@ -44,10 +44,12 @@ export default function Home() {
                       ripple
                       size="large"
                       type="primary"
+                      onClick={()=>handleSubmit()}
                       action={(element, next) => {
                         // action('clicked');
 
                         setTimeout(() => {
+                          handleSubmit()
                           next();
                         }, 600);
                       }}
@@ -60,6 +62,7 @@ export default function Home() {
                 <div className="col-10 col-sm-8 col-md-6 col-lg-6 mx-auto d-flex justify-content-center align-items-center mt-5 ">
                   <div className="drag">
                   <img
+                  
                     src={Img}
                     style={{ maxHeight: "320px", maxWidth: "320px" }}
                     className="img-fluid rounded react"
