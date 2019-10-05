@@ -25,7 +25,7 @@ class ProductProvider extends Component {
       let url = window.URL.createObjectURL(blob);
       let a = document.createElement('a');
       a.href=url;
-      a.download = 'звіт.pdf';
+      a.download = 'text.txt';
       a.click();
     })});
     
