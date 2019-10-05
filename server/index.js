@@ -21,7 +21,7 @@ app.get('/api/greeting', (req, res) => {
   res.send(JSON.stringify({ greeting: `Hello ${name}!, ${second}` }));
 });
 app.get('/download', function(req, res){
-    const file = `${__dirname}/files/звіт.docx`;
+    const file = `${__dirname}/files/звіт.pdf`;
     res.download(file); // Set disposition and send it.
   });
 
