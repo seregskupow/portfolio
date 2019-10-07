@@ -21,11 +21,19 @@ app.get('/api/greeting', (req, res) => {
   res.send(JSON.stringify({ greeting: `Hello ${name}!, ${second}` }));
 });
 app.get('/download', function(req, res){
-    const file = `${__dirname}/files/text.txt`;
+    const file = `${__dirname}/files/zvit.pdf`;
     res.download(file); 
   });
 
-app.listen(3001, () =>
+    if (process.env.NODE_ENV === "production"){
+      app.use(express.static('portfolio-master/build'));
+    }
+    app.get('*',(req,res)=>{
+      res.sendFile(path.resolve(__dirname,"build","index.html"));
+   }) 
+
+   const PORT = process.env.PORT || 3001
+app.listen(PORT, () =>
   console.log('Express server is running on localhost:3001')
  
 );
