@@ -9,7 +9,7 @@ import {
 import { getDiffieHellman } from 'crypto';
 
 export default function Card(props) {
-  const { id, tools, description, img, complete } = props.data;
+  const { id, tools, description, img, complete,url } = props.data;
   let { title } = props;
   let target = useRef(null);
   let target2 = useRef(null);
@@ -54,7 +54,7 @@ export default function Card(props) {
           <div className="d-flex tools">{tools.map(tool => (
             <div className="tool">{tool}</div>
           ))}</div>
-          <AwesomeButton size="medium" className="more-btn"> more</AwesomeButton>
+          <a href={url}><AwesomeButton size="medium" className="more-btn"> Follow</AwesomeButton></a>
         </div>
 
       </div>

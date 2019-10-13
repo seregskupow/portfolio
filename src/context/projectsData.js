@@ -7,6 +7,7 @@ export const projects = [
       description:
         "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you.",
         complete:true,
+        url:"https://servicez.netlify.com/",
       image: { fields: { file: { url: "img/servicez.png" } } }
       
     }
@@ -20,6 +21,7 @@ export const projects = [
       description:
         "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you.",
         complete:true,
+        url:"http://parallaxskupow.netlify.com",
       image: { fields: { file: { url: "img/parallax.png" } } }
     }
   },
@@ -32,6 +34,7 @@ export const projects = [
       description:
         "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you.",
         complete:true,
+        url:"https://reactskupow.netlify.com/",
       image: { fields: { file: { url: "img/store.png" } } }
     }
   },
@@ -44,6 +47,7 @@ export const projects = [
       description:
         "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you.",
         complete:true,
+        url:"http://unigames.zzz.com.ua/",
       image: { fields: { file: { url: "img/apple.png" } } }
     }
   },
@@ -56,6 +60,7 @@ export const projects = [
       description:
         "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you.",
         complete:true,
+        url:"https://github.com/seregskupow/javascript_cart",
       image: { fields: { file: { url: "img/default.png" } } }
     }
   }
