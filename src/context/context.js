@@ -20,14 +20,19 @@ class ProductProvider extends Component {
 
   }
   handleSubmit() {
-    fetch(`download`)
-    .then(response => {response.blob().then(blob=>{
-      let url = window.URL.createObjectURL(blob);
-      let a = document.createElement('a');
-      a.href=url;
-      a.download = 'zvit.pdf';
-      a.click();
-    })});
+    // fetch(`download`)
+    // .then(response => {response.blob().then(blob=>{
+    //   let url = window.URL.createObjectURL(blob);
+    //   let a = document.createElement('a');
+    //   a.href=url;
+    //   a.download = 'zvit.pdf';
+    //   a.click();
+    // })});
+    // window.open('../../public.zvit.pdf');
+    var link = document.createElement('a');
+link.href = 'zvit.pdf';
+link.download = 'zvit.pdf';
+link.dispatchEvent(new MouseEvent('click'));
     
        
   }

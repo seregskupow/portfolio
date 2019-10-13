@@ -19,7 +19,7 @@ export default function Card(props) {
     let arr = [...el.lastChild.lastChild.firstChild.children];
     if (param===true) {
       
-      tl.to(el, 0, { scale: 1.1, ease: Power3.easeOut }).staggerTo(arr, 1, { y: 0, opacity: 1,ease: Elastic.easeOut }, 0.1);
+      tl.to(el, 0, { scale: 1, ease: Power3.easeOut }).staggerTo(arr, 1, { y: 0, opacity: 1,ease: Elastic.easeOut }, 0.1);
        tl.play();
     }
 
@@ -46,7 +46,7 @@ export default function Card(props) {
 
   return (
 
-    <div className="card" ref={el => target = el} onMouseEnter={()=>{cardAnimation(target, true)}} onMouseLeave={()=>{cardAnimation(target, false)}}>
+    <div className="card" ref={el => target = el} onMouseOver={()=>{cardAnimation(target, true)}} onMouseLeave={()=>{cardAnimation(target, false)}}>
       <img src={img} alt="" style={{ height: "300px" }} className="image-fluid rounded card-img-top" />
       <div className="card-body">
         <p className="text-uppercase haha" >{title}</p>

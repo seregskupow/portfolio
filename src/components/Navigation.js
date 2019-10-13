@@ -10,7 +10,7 @@ export default function Navigation({ prop }) {
 
   const navigAnimation = (flag) => {
     let ul = document.getElementsByTagName('ul');
-    let li = document.getElementsByTagName('li');
+    let li = document.querySelectorAll('.menu-item');
     if (flag==true) {
       TweenMax.from(ul, 1, { scale: 1.1,opacity:0, ease: Power3.easeInOut });
       TweenMax.staggerFrom(li,1,{y:-100,opacity:0,ease:Elastic.easeInOut},0.3)
@@ -32,7 +32,7 @@ export default function Navigation({ prop }) {
           <Nav view={navOpen} className="navigation">
             <ul ref={el => target = el}>
               {links.map(link => (
-                <li key={link.id} >
+                <li className="menu-item" key={link.id} >
                   <Link to={link.path} onClick={handleNav}>
                     {link.text}
                   </Link>
