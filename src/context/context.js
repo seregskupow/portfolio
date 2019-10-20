@@ -30,8 +30,8 @@ class ProductProvider extends Component {
     // })});
     // window.open('../../public.zvit.pdf');
     var link = document.createElement('a');
-link.href = 'zvit.pdf';
-link.download = 'zvit.pdf';
+link.href = 'CV_Sergey_Skupow_Frontend_developer.pdf';
+link.download = 'CV_Sergey_Skupow_Frontend_developer.pdf';
 link.dispatchEvent(new MouseEvent('click'));
     
        
