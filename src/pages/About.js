@@ -73,7 +73,7 @@ export default function About() {
               <div className="row about-row py-5 my-5 d-flex justify-content-center">
                 <div className="col-10 col-md-6 col-lg-6 d-flex justify-content-center flex-column">
                   <h1>As I`ve already mentioned, my name is Sergey Skupow</h1>
-                  <p>What else? Well in the college I was thinking about my future and possible programmer ways that would match me and my passions. I fill myself belonging both to technical and art spheres. I love creating something beautiful and functional at the same time. To my mind, area of the web-developing covers both of these aspects as there so many masterpieces around the internet</p></div>
+                  <p>What else? Well in the college I was thinking about my future and possible programming ways that would match me and my passions. I fill myself belonging both to technical and art spheres. I love creating something beautiful and functional at the same time. To my mind, area of the web-developing covers both of these aspects as there are so many masterpieces around the internet</p></div>
                 <div className="col-10 col-md-6 col-lg-6 d-flex justify-content-center">
                   <img src={aboutme} alt="" className="img-fluid rounded" style={{ maxHeight: "350px" }} />
                 </div>
@@ -82,7 +82,7 @@ export default function About() {
               <div className="row about-row py-5 flex-row-reverse my-5 d-flex justify-content-center">
                 <div className="col-10 col-md-6 col-lg-6 d-flex justify-content-center flex-column">
                   <h1>What about my skills?</h1>
-                  <p>After I`ve chosen my path I started learning webdev started pack:<br />HTML5+CSS3. I`ve created a bunch of landing-pages. Then I learned JavaScript and my web-sites became more functional and animated. Soon I found out about the gsap library which made animation process easier and more advanced. I`ve also made the Wordpress web-site with my own design.<br />To sum up, here are my skills:<br /></p>
+                  <p>After I`ve chosen my path I started learning webdev "starter pack":<br />HTML5+CSS3. I`ve created a bunch of landing-pages. Then I learned JavaScript and my web-sites became more functional and animated. Soon I found out about the gsap library which made animation process easier and more advanced. I`ve also made the Wordpress web-site with my own design. Then I learned React JS + Node JS.<br />To sum up, here are my skills:<br /></p>
                   <div className="tools d-flex">
                     {skills.map(item => (
                       <div className="tool" style={{ opacity: 1, transform: "translateY(0)",background:`rgba(${item.color},0.15)` }}><span style={{fontSize:"20px"}}>{item.icon}</span>{item.name}</div>
@@ -98,7 +98,7 @@ export default function About() {
               <div className="row about-row py-5 my-5 d-flex justify-content-center">
                 <div className="col-10 col-md-6 col-lg-6 d-flex justify-content-center flex-column">
                   <h1>My passions</h1>
-                  <p>If we are talking about the development, I would say the greatest pleasure I can receive is the filling of the finished project. I also love spending my time admiring and code reviewing the gsap professionals` projects at <a href="https://greensock.com/showcase/">here</a>.<br/></p></div>
+                  <p>If we are talking about the development, I would say the greatest pleasure I can receive is the feeling of the finished project. I also love spending my time admiring and code reviewing the gsap professionals` projects <a href="https://greensock.com/showcase/">here</a>.<br/></p></div>
                 <div className="col-10 col-md-6 col-lg-6 d-flex justify-content-center">
                   <img src={love} alt="" className="img-fluid rounded" style={{ maxHeight: "350p" }} />
                 </div>

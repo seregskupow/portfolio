@@ -35,7 +35,7 @@ export default function Home() {
                   <div className="text">
                     <h1 className="text-uppercase">hello!</h1>
                       <p class="text-uppercase">my name is Sergey Skupow</p>
-                      <p className="text-uppercase">i am the beginner web developer, who searches for a job offer!</p>
+                      <p className="text-uppercase">i am a beginner web developer, who is searching for a job offer!</p>
 
                   </div>
                   <div className="" style={{ width: "100%" }}>
@@ -79,7 +79,7 @@ export default function Home() {
                     <li><a href="https://t.me/sergeyskupow"><FaTelegramPlane/></a></li>
                     <li><a href=""><FaDiscord/></a></li>
                     <li><a href="https://github.com/seregskupow"><FaGithub/></a></li>
-                    <li><a href=""><IoMdMail/></a></li>
+                    <li><a href="mailto: sergskypow@gmail.com"><IoMdMail/></a></li>
                   </ul>
                 </div>
               </div>
