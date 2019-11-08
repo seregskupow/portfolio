@@ -63,5 +63,18 @@ export const projects = [
         url:"https://github.com/seregskupow/javascript_cart",
       image: { fields: { file: { url: "img/default.png" } } }
     }
+  },
+  {
+    sys: { id: 5 },
+
+    fields: {
+      title: "javascript TODO app",
+      tools: ["html5", "css3", "js","scss"],
+      description:
+        "My money's in that office, right? If she start giving me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey, look at me when I'm talking to you.",
+        complete:true,
+        url:"https://seregskupow.github.io/ciklum-test/",
+      image: { fields: { file: { url: "img/common.png" } } }
+    }
   }
 ];
